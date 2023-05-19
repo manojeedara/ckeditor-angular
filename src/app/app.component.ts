@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import * as customEditor from './build/ckeditor';
+
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'ckeditor-angular';
+
+  title = 'angular';
+  public Editor:any = customEditor;
 }
